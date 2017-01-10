@@ -1,0 +1,33 @@
+<nav class="navbar-default navbar">
+  <div class="container-fluid">
+    <!--로고영역-->
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">레시피북</a>
+    </div>
+
+    <!--메뉴영역-->
+    <div class="navbar-collapse collapse">
+
+      <!--주메뉴영역-->
+      <ul class="navbar-nav nav">
+        <li routerLinkActive="active"><a routerLink="recipes">레시피</a></li>
+        <li routerLinkActive="active"><a routerLink="shopping-list">쇼핑목록</a></li>
+      </ul>
+
+      <!--부메뉴영역-->
+      <ul class="navbar-nav navbar-right nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">로그인 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">기타</a></li>
+            <li role="seperator" class="divider"></li>
+            <li><a href="#">로그아웃</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>

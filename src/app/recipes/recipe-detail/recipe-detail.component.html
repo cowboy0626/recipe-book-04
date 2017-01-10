@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="{{recipe?.imagePath}}" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{recipe?.name}}</h1>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn-success btn" (click)="onAddToShoppingList()">쇼핑목록에 추가</button>
+    <button class="btn-primary btn" (click)="onEdit()">수정</button>
+    <button class="btn-danger btn" (click)="onDelete()">삭제</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{recipe?.description}}</p>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of recipe?.ingredients">{{item.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
