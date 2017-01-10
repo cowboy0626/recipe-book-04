@@ -16,13 +16,11 @@
 
       <!--부메뉴영역-->
       <ul class="navbar-nav navbar-right nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">로그인 <span class="caret"></span></a>
+        <li class="dropdown" rbDropdown>
+          <a class="dropdown-toggle" role="button" aria-haspopup="true"   aria-expanded="false">Recipe Management <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">기타</a></li>
-            <li role="seperator" class="divider"></li>
-            <li><a href="#">로그아웃</a></li>
+            <li><a (click)="onStore()" style="cursor:pointer;">Store Recipes</a></li>
+            <li><a (click)="onFetch()" style="cursor:pointer;">Retrive Recipes</a></li>
           </ul>
         </li>
       </ul>
